@@ -24,8 +24,10 @@ html {
 
 body {
   margin: 0;
-  /*TESTING*/
-  background-color: orange;
+}
+
+p {
+    background-color: orange;
 }
 
 /**
