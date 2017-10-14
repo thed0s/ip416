@@ -1,0 +1,38 @@
+/* HEADER CSS */
+
+.navigation-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.navigation-container .page-title {
+  width: 100%;
+  margin: 0;
+  font-family: "KiloGram";
+  font-size: 6em;
+  text-align: center;
+}
+
+.main-nav-container {
+  margin-left: 1vw;
+}
+
+.menu {
+  margin-left: 1vw;
+}
+
+.social-media-container {
+  margin-right: 2vw;
+}
+
+.nav-button {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.nav-button:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
