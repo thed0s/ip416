@@ -1,38 +1,59 @@
 /* HEADER CSS */
 
+/*   MOBILE   */
+
 .navigation-container {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: space-between;
+  position: absolute;
+  z-index: 5000;
 }
 
 .navigation-container .page-title {
-  width: 100%;
-  margin: 0;
-  font-family: "KiloGram";
-  font-size: 6em;
-  text-align: center;
+  display: none;
 }
 
 .main-nav-container {
-  margin-left: 1vw;
-}
-
-.menu {
-  margin-left: 1vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .social-media-container {
-  margin-right: 2vw;
+  display: none;
 }
 
-.nav-button {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
+/*  DESKTOP   */
 
-.nav-button:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+@media screen and (min-width: 770px) {
+  .navigation-container .page-title {
+    display: inline;
+    width: 100%;
+    margin: 0;
+    font-family: "KiloGram";
+    font-size: 7vw;
+    text-align: center;
+    color: rgb(230, 230, 230);
+  }
+  .main-nav-container {
+    display: inline;
+    margin-left: 1vw;
+  }
+  .menu {
+    margin-left: 1vw;
+  }
+  .social-media-container {
+    display: inline;
+    margin-right: 2vw;
+  }
+  .nav-button {
+    -webkit-filter: brightness(100%) grayscale(100%);
+    filter: brightness(400%) grayscale(100%);
+  }
+  .nav-button:hover {
+    -webkit-filter: sepia(0%);
+    filter: sepia(0%);
+  }
 }
