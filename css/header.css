@@ -26,7 +26,6 @@
 }
 
 /*  DESKTOP   */
-
 @media screen and (min-width: 770px) {
   .navigation-container .page-title {
     display: inline;
