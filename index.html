@@ -11,6 +11,7 @@
   <meta name="keywords" content="">
   <meta http-equiv="author" content="thed0s-design">
   <meta http-equiv="expires" content="Mon, 01 Oct 2018 23:59:59 GMT">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Passion+One|Russo+One|Oswald" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="icon" type="image/png" href="favicon.ico">
@@ -20,6 +21,10 @@
   <!-- Custom additions -->
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <link rel="stylesheet" href="css/featured.css">
+  <link rel="stylesheet" href="css/links.css">
+  <link rel="stylesheet" href="css/whoami.css">
 </head>
 
 <body>
@@ -29,73 +34,131 @@
   <div class="web-container">
 
     <!-- HEADER BEGINS -->
-    <header class="navigation-container">
-      <h1 class="page-title">Investment Properties 416</h1>
-      <nav>
-        <div class="main-nav-container">
-          <a href="#"><img title="Home" class="menu nav-button" src="./img/icons/home-blue.png" alt="Home" width="42px" height="42px"></a>
-          <a href="#"><img title="Investing Info" class="menu nav-button" src="./img/icons/info-blue.png" alt="Investing Info" width="42px" height="42px"></a>
-          <a href="#"><img title="Listings" class="menu nav-button" src="./img/icons/listing-blue.png" alt="Listings" width="42px" height="42px"></a>
-          <a href="#"><img title="Blog" class="menu nav-button" src="./img/icons/blog-blue.png" alt="Blog" width="42px" height="42px"></a>
-          <a href="#"><img title="About" class="menu nav-button" src="./img/icons/about-blue.png" alt="About" width="42px" height="42px"></a>
-          <a href="#"><img title="Contact" class="menu nav-button" src="./img/icons/mail-blue.png" alt="Contact" width="42px" height="42px"></a>
-        </div>
+    <div class="titleWrapper">
+      <h1 class="pageTitle">IP416</h1>
+    </div>
+
+    <header class="topUI">
+      <nav class="navMenu">
+        <a href="#">HOME</a>
+        <a href="#">INVESTING</a>
+        <a href="#">ADVICE</a>
+        <a href="#">RESOURCES</a>
+        <a href="#">CONTACT</a>
       </nav>
-      <nav>
-        <div class="social-media-container">
-          <a href="#"><img title="Instagram" class="social-media nav-button" src="./img/icons/instagram.png" alt="Instagram" width="36px" height="36px"></a>
-          <a href="#"><img title="Twitter" class="social-media nav-button" src="./img/icons/twitter.png" alt="Twitter" width="36px" height="36px"></a>
-          <a href="#"><img title="Facebook" class="social-media nav-button" src="./img/icons/facebook2.png" alt="Facebook" width="36px" height="36px"></a>
-          <a href="#"><img title="LinkedIn" class="social-media nav-button" src="./img/icons/linkedin.png" alt="LinkedIn" width="36px" height="36px"></a>
-        </div>
+
+      <!--  <h1 class="pageTitle">Investment Properties 416</h1> -->
+
+      <nav class="socialNav">
+        <a href="#"><img title="Instagram" src="./img/icons/instagram.png" alt="Instagram"></a>
+        <a href="#"><img title="Twitter" src="./img/icons/twitter.png" alt="Twitter"></a>
+        <a href="#"><img title="Facebook" src="./img/icons/facebook.png" alt="Facebook"></a>
+        <a href="#"><img title="LinkedIn" src="./img/icons/linkedin.png" alt="LinkedIn"></a>
       </nav>
     </header>
     <!-- HEADER ENDS -->
 
     <!-- MAIN BEGINS -->
-    <main class="content-container">
-      <section class="slideshow-content-container">
-        <div class="slideshow-container">
-          <button class="prev button" type="button" onclick()><</button>
-          <img title="Graffiti" class="slide" src="img/graffiti.JPG" alt="Graffiti" width="100%" height="100%">
-          <button class="next button" type="button" onclick()>></button>
+    <main class="mainUI">
+      <section class="slideshowContainer">
+        <div class="listingSearchContainer">
+          <h2>Own your dream home today: </h2>
+          <button>Search Listings</button>
         </div>
-        <div class="comment-wrapper">
-          <p class="comment">Graffiti Alley, Queen Street, Toronto</p>
+        <div class="slide one active">
+          <img title="Graffiti" src="img/boats.JPG" alt="Graffiti">
         </div>
-      </section>
-      <section>
-        <div class="service-container">
-          <div class="service-flex-container">
-            <a class="service wrapper-one">
-              <img title="Investing Blog" class="service-image" src="" alt="Investment Blog" width="" height="">
-              <h2 class="service-title"> Investing Blog </h2>
-            </a>
-            <div class="triple-container">
-              <div class="double-container">
-                <a class="service wrapper-two">
-                  <img title="Buying/Selling" class="service-image" src="" alt="Buying/Selling" width="" height="">
-                  <h2 class="service-title"> Buying / Selling </h2>
-                </a>
-                <a class="service wrapper-four">
-                  <img title="Tenent Forms" class="service-image" src="" alt="Tenent Forms" width="" height="">
-                  <h2 class="service-title"> Tenent Forms </h2>
-                </a>
-              </div>
-              <a class="service wrapper-three">
-                <img title="Listings" class="service-image" src="" alt="Listings" width="" height="">
-                <h2 class="service-title"> Featured Listings </h2>
-              </a>
+        <!--  <div class="slideControls">
+          <button class="slideNav prev" type="button" onclick()><</button>
+          <div class="slideDescription">
+            <div class="borderBox">
+              <p>Graffiti Alley, Queen Street, Toronto</p>
             </div>
-            <a class="service wrapper-five">
-              <img title="Investing Resources" class="service-image" src="" alt="Investing Resources" width="" height="">
-              <h2 class="service-title"> Investing Resources </h2>
-            </a>
+          </div>
+          <button class="slideNav next" type="button" onclick()>></button>
+        </div> -->
+      </section>
+
+      <section class="featuredListings">
+        <div class="featuredContainer">
+          <div class="sectionTitle">
+            <a href="#">View All</a>
+            <h2>FEATURED LISTINGS</h2>
+          </div>
+          <div class="listingsContainer">
+            <div class="featContainer">
+              <div class="listingImg">
+                <img src="./img/feat1.jpeg">
+              </div>
+
+              <div class="listingDescription">
+                <p></p>
+              </div>
+
+            </div>
+            <div class="featContainer">
+              <div class="listingImg">
+                <img src="./img/feat2.jpeg">
+              </div>
+              <div class="listingDescription">
+              </div>
+            </div>
+            <div class="featContainer">
+              <div class="listingImg">
+                <img src="./img/feat3.jpeg">
+              </div>
+              <div class="listingDescription">
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <sectioin>
-        <div class="about-container">
+
+      <section class="linksContainer">
+        <div class="linkBox" style="border-right: 2px solid black;">
+          <div class="boxBG">
+            <img title="Blog" alt="Blog" src="./img/blog1.jpg">
+          </div>
+          <div class="boxTitle">
+            <h1>Advice<br>Blog</h1>
+          </div>
+        </div>
+        <div class="linkBox" style="border-right: 2px solid black;">
+          <div class="boxBG">
+            <img title="Buy" alt="Buy" src="./img/buy1.jpg">
+          </div>
+          <div class="boxTitle">
+            <h1>Buy</h1>
+          </div>
+        </div>
+        <div class="linkBox" style="border-right: 2px solid black;">
+          <div class="boxBG">
+            <img title="Sell" alt="Sell" src="./img/sell1.jpg">
+          </div>
+          <div class="boxTitle">
+            <h1>Sell</h1>
+          </div>
+        </div>
+        <div class="linkBox" style="border-right: 2px solid black;">
+          <div class="boxBG">
+            <img title="Featured" alt="Featured Listings" src="./img/feat1.jpg">
+          </div>
+          <div class="boxTitle">
+            <h1>Featured<br>Listings</h1>
+          </div>
+        </div>
+        <div class="linkBox">
+          <div class="boxBG">
+            <img title="Forms" alt="Forms" src="./img/forms1.jpg">
+          </div>
+          <div class="boxTitle">
+            <h1>Forms</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="whoAmIContainer">
+        <div class="aboutContainer">
           <div class="about-content-container">
             <div class="description-body">
               <p>"My goal as a job title here is too make sure that the public is getting the absolute best quality job here. I've spent X years of my life perfecting my craft and desire nothing more than to list a bunch of things that make people feel good
@@ -109,11 +172,11 @@
             <img title="Michael Cristea" src="" alt="Michael Cristea" width="" height="">
           </div>
         </div>
-        </section>
-        <section>
-          <div class="testimonials-container">
-          </div>
-        </section>
+        <div class="trackRecSlideshow">
+        </div>
+        <div class="testimonials-container">
+        </div>
+      </section>
     </main>
     <!-- MAIN ENDS -->
 
