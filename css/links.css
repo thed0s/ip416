@@ -1,0 +1,48 @@
+/* MOBILE */
+
+/* DESKTOP */
+@media screen and (min-width: 770px) {
+  .linksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    height: 76vh;
+    border-top: 3px solid black;
+  }
+  .linkBox {
+    flex: 1;
+    width: 15%;
+  }
+  .linkBox:hover {
+    flex-grow: 2;
+    box-shadow: 0px 12px 12px 5px rgba(0, 0, 0, 0.65);
+  }
+  .boxBG {
+    height: 100%;
+    overflow: hidden;
+  }
+  .boxBG img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .boxTitle {
+    flex: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    bottom: 80%;
+
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill: white;
+  }
+  .boxTitle h1 {
+    font-family: 'Passion One', cursive;
+    font-size: 6vh;
+    text-align: center;
+    color: white;
+  }
+}

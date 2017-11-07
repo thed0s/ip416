@@ -1,58 +1,65 @@
-/* HEADER CSS */
-
 /*   MOBILE   */
-
-.navigation-container {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  position: absolute;
-  z-index: 5000;
-}
-
-.navigation-container .page-title {
-  display: none;
-}
-
-.main-nav-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.social-media-container {
-  display: none;
-}
 
 /*  DESKTOP   */
 @media screen and (min-width: 770px) {
-  .navigation-container .page-title {
-    display: inline;
+  .topUI {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 6%;
+    z-index: 5000;
     width: 100%;
-    margin: 0;
-    font-family: "KiloGram";
-    font-size: 7vw;
+    height: 6%;
+    border-top: 2px solid rgb(89, 80, 83);
+    border-bottom: 2px solid rgb(89, 80, 83);
+    background-color: /*rgb(251, 250, 233)*/ /*rgb(245,245,245)*/ #fafffb;
+  }
+  .navMenu{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  .navMenu a{
+    padding: 8px 12px 8px 12px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vh;
+    font-weight: 700;
     text-align: center;
-    color: rgb(230, 230, 230);
+    text-decoration: none;
+    color: /*black*/ rgb(89, 80, 83);
+    margin: 0 0.15vw 0 0.15vw;
+
+    /*-webkit-text-stroke: 0.5px black;*/
   }
-  .main-nav-container {
-    display: inline;
-    margin-left: 1vw;
+  .titleWrapper {
+    position: absolute;
+    width: 100%;
   }
-  .menu {
-    margin-left: 1vw;
+  .pageTitle {
+    margin-top: 0;
+    margin-right: 1vh;
+    font-family: 'Russo One', sans-serif;
+    font-size: 3vw;
+    font-weight: 600;
+    text-align: right;
+    color: rgb(235, 235, 235);
+    border-top: rgb(235, 235, 235);
+    border-bottom: rgb(235, 235, 235);
+
+    -webkit-text-stroke: 1px rgb(89, 80, 83);
   }
-  .social-media-container {
-    display: inline;
-    margin-right: 2vw;
+  .socialNav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
   }
-  .nav-button {
-    -webkit-filter: brightness(100%) grayscale(100%);
-    filter: brightness(400%) grayscale(100%);
-  }
-  .nav-button:hover {
-    -webkit-filter: sepia(0%);
-    filter: sepia(0%);
+  .socialNav img{
+    height: 30px;
+    width: 30px;
+    margin-right: 0.5vw;
   }
 }

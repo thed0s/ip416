@@ -1,0 +1,10 @@
+/* MOBILE */
+
+/* DESKTOP */
+@media screen and (min-width: 770px){
+  .whoAmIContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
