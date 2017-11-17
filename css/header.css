@@ -36,6 +36,7 @@
   }
   .titleWrapper {
     position: absolute;
+    z-index: 4900;
     width: 100%;
   }
   .pageTitle {
