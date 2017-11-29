@@ -4,16 +4,16 @@
 @media screen and (min-width: 770px) {
   .slideshowContainer {
     width: 100%;
-    height: 100%;
-    border-bottom: 3px solid rgb(89, 80, 83);
+    height: 94vh;
+    /*border-bottom: 3px solid rgb(89, 80, 83);*/
   }
   .slide {
     box-sizing: border-box;
 
     width: 100%;
-    height: 100vh;
-    -webkit-filter: brightness(90%) blur(2px);
-    filter: brightness(90%) blur(2px);
+    height: 94vh;
+  /*  -webkit-filter: brightness(90%) blur(2px);
+    filter: brightness(90%) blur(2px); */
   }
   .slide img{
     box-sizing: border-box;
@@ -21,13 +21,27 @@
     height: 100%;
     object-fit: cover;
   }
+
+  .parallax {
+    background-image: url("../img/leather.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .listingSearchContainer {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 26%;
-    left: 7%;
+    top: 28%;
+    left: 8%;
     z-index: 1000;
     font-family: 'PT Sans', sans-serif;
     font-size: 3.5vh;

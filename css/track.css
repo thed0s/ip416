@@ -1,0 +1,65 @@
+@media screen and (min-width: 770px) {
+  .trackRecord {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    border-top: 4px solid #29322f;
+  }
+  .trackTitle {
+    width: 100%;
+    text-align: center;
+  }
+  .trackTitle h2 {
+    font-size: 5.5vh;
+    font-weight: 600;
+    font-family: 'PT Sans', sans-serif;
+    color: #29322f;
+  }
+.carouselContainer{
+  width: 80%;
+}
+.carousel {
+  background: #FAFAFA;
+  margin-bottom: 40px;
+}
+.carousel::after {
+  content: 'flickity';
+  display: none;
+}
+
+.carousel-cell {
+  width: 70%;
+  height: 400px;
+  margin-right: 10px;
+  background: #1cc1f5;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav .carousel-cell {
+  height: 80px;
+  width: 100px;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  background: #ED2;
+}
+}

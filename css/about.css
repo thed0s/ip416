@@ -4,14 +4,59 @@
 @media screen and (min-width: 770px) {
   .aboutMe {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 80vh;
     background-color: #29322f;
   }
   .aboutMeContainer {
+    box-sizing: border-box;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  .aboutMeTitle {
+    width: 100%;
+    text-align: center;
+  }
+  .aboutMeTitle h2 {
+    font-size: 5.5vh;
+    font-weight: 600;
+    font-family: 'PT Sans', sans-serif;
+    color: #fafffb;
+  }
+  .aboutPos {
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+  .aboutDescription {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    color: #fafffb;
+  }
+  .aboutDescription q {
+    width: 100%;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0vh 2vw 0vh 2vw;
+  }
+  .aboutMeImg {
+    width: 50vh;
+    height: 50vh;
+  }
+  .aboutMeImg img {
+    width: 100%;
+    height: 100%;
+
+    border: 4px solid #fafffb;
+    border-radius: 6px;
   }
 }

@@ -4,12 +4,11 @@
 @media screen and (min-width: 770px) {
   .userResources {
     width: 100%;
-    height: 102vh;
+    height: 63vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    /*border-bottom: 3px solid rgb(89, 80, 83);*/
     background-color: #29322f;
   }
   .barContainer {
