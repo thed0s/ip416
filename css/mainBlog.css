@@ -1,134 +1,223 @@
-/* MOBILE */
+.blog {
+  width: 100%;
+  height: 3425px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(225, 225, 225);
+}
 
-/* DESKTOP */
-@media screen and (min-width: 770px) {
-  .blog {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .blogTitle {
-    width: 87.5%;
-    height: 23vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-top: 3.5vh;
-    font-family: 'PT Sans', sans-serif;
-    color: #29322f;
-    text-align: right;
-    border-right: 7px solid #29322f;
-  }
-  .blogTitle h2 {
-    font-size: 5.5vh;
-    font-weight: 600;
-    margin-right: 1vw;
-  }
-  .blogTitle h3 {
-    width: 40%;
-    font-size: 3.5vh;
-    margin-right: 1vw;
-    margin-top: -5vh;
-  }
-  .blogContainer {
-    margin-top: 4vh;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: space-around;
-  }
-  .big {
-    width: 45%;
-  }
-  .Square {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    font-family: 'PT Sans', sans-serif;
-    color: #29322f;
-  }
-  .Square h3 {
-    width: 100%;
-    font-size: 2.5vh;
-    font-weight: 600;
-    text-decoration: underline;
-    text-align: center;
-    padding-top: 2vh;
-    border-top: 4px solid #29322f;
-  }
-  .Square p {
-    width: 100%;
-    text-align: justify;
-  }
-  .blogImgWrapper {
-    width: 100%;
-    height: 60%;
-  }
-  .blogImgWrapper img, .rowImgWrapper img {
-    width: 100%;
-    height: 100%;
+.blogTitle {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: -9vh;
+  align-items: flex-end;
+  font-family: 'PT Sans', sans-serif;
+  color: rgb(19, 10, 13);
+}
 
-    border: 4px solid #29322f;
-    border-radius: 6px;
-  }
-  .rowContainer {
-    width: 49%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
-  }
-  .lrRow, .rlRow {
-    width: 100%;
-    height: 47%;
-    margin-top: 0.7vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .rowImgWrapper {
-    width: 40%;
-    height: 90%;
-  }
-  .rowImgWrapper img {
-    width: 100%;
-    height: 100%;
-  }
-  .blogDescription {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.blogTitle h2 {
+  align-self: center;
+  text-align: left;
+  color: rgb(19, 10, 13);
+  font-size: 3em;
+}
+
+.blogTitle a {
+  text-decoration: none;
+}
+
+.blogContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.big {
+  width: 1296px;
+}
+.big a {
+  width: 100%;
+}
+.Square {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+}
+
+.Square h3 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 3%;
+  font-family: 'PT Sans', sans-serif;
+  color: rgb(245, 245, 245);
+  font-size: 3em;
+  font-weight: 700;
+  text-align: left;
+}
+
+.blogImgWrapper {
+  width: 100%;
+  height: 774px;
+  position: relative;
+}
+
+.blogImgWrapper img {
+  width: 100%;
+  height: 100%;
+  border: 4px solid rgb(19, 10, 13);
+  filter: grayscale(100%) brightness(65%);
+}
+
+.blogImgWrapper:hover img {
+  filter: grayscale(0%) brightness(100%);
+}
+
+.testimonialContainer, .subjectContainer {
+  width: 1296px;
+}
+.testimonialContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(245,245,245);
+}
+#testimonialSlideshow, .subjectTitle {
+  box-sizing: content-box;
+  width: 100%;
+  border: 4px solid rgb(19, 10, 13);
+  position: relative;
+  height: 200px;
+}
+#testimonialSlideshow > div {
+    position: absolute;
     font-family: 'PT Sans', sans-serif;
-    color: #29322f;
-  }
-  .lrRow h3, .rlRow h3 {
-    width: 80%;
-    height: 20%;
-    font-size: 2.5vh;
-    font-weight: 600;
-    text-decoration: underline;
-    text-align: center;
-    padding-top: 2vh;
-    border-top: 4px solid #29322f;
-  }
-  .lrRow p, .rlRow p {
-    width: 80%;
-    text-align: justify;
-  }
-  .quadContainer {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-  }
-  .small {
-    width: 43%;
-    padding-bottom: 4vh;
-  }
+    font-size: 2em;
+    font-weight: 400;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+#testimonialSlideshow h3 {
+  width: 100%;
+  text-align: right;
+  margin-top: -1vh;
+}
+#tSlideshow {
+  position: relative;
+}
+#tSlideshow > div {
+  position: absolute;
+}
+.subjectTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/greybg.jpg");
+}
+.subjectTitle h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5em;
+  text-align: center;
+}
+.doubleSquare {
+  width: 1296px;
+  heigh: 810px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.small {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.small h3 {
+  text-align: center;
+}
+.smallImgWrapper {
+  width: 100%;
+  height: 432px;
+  position: relative;
+}
+.smallImgWrapper img {
+  width: 100%;
+  height: 100%;
+  border: 4px solid rgb(19, 10, 13);
+  filter: grayscale(100%) brightness(65%);
+}
+
+.smallImgWrapper:hover img {
+  filter: grayscale(0%) brightness(100%);
+}
+.gap {
+  margin-top: -8vh;
+}
+.mainBlog{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid black;
+  margin-bottom: 4vh;
+}
+.mainBlogContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.mainSubjectContainer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+.mainBlogWrite{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.mainSubjectContainer h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+}
+.mainSubjectContainer p {
+  font-size: 1.25em;
+  text-align: justify;
+}
+.imgContainer {
+  width: 90%;
+  height: 40vh;
+  align-self: center;
+}
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  font-family: 'PT Sans', sans-serif;
+}
+.sidebar h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.otherPosts {
+  display: flex;
+  flex-direction: column;
+}
+
 }

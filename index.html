@@ -12,6 +12,7 @@
   <meta http-equiv="author" content="thed0s-design">
   <meta http-equiv="expires" content="Mon, 01 Oct 2018 23:59:59 GMT">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans|Passion+One|Russo+One|Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="icon" type="image/png" href="favicon.ico">
@@ -24,8 +25,9 @@
   <link rel="stylesheet" href="css/slideshow.css">
   <link rel="stylesheet" href="css/resources.css">
   <link rel="stylesheet" href="css/mainBlog.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/testimonial.css">
+  <!--  <link rel="stylesheet" href="css/testimonial.css"> -->
   <link rel="stylesheet" href="css/track.css">
   <link rel="stylesheet" href="css/flickity.css">
 
@@ -37,54 +39,149 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
   <div class="web-container">
-
-    <div class="titleWrapper">
-      <h1 class="pageTitle">LOGO</h1>
-    </div>
     <!-- HEADER BEGINS -->
+    <div class="titleWrapper">
+      <h1 class="pageTitle">FRIDMAN</h1>
+      <h3 class="subheading">---------- TORONTO ----------</h3>
+    </div>
 
+    <header id="topUI">
+      <nav class="navMenu">
+        <a href="#">HOME</a>
+        <a href="#">INVESTING</a>
+        <a href="#">ADVICE</a>
+        <div class="dropdown">
+          <button class="dropbtn">RESOURCES
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Buyers Guide</a>
+            <a href="#">Sellers Guide</a>
+            <a href="#">FAQs</a>
+          </div>
+        </div>
+        <!--<a href="#">RESOURCES</a>-->
+        <a href="#">CONTACT</a>
+      </nav>
+
+      <!--  <h1 class="pageTitle">Investment Properties 416</h1> -->
+
+      <nav class="socialNav">
+        <a href="#"><img title="Instagram" src="./img/icons/instagram.png" alt="Instagram"></a>
+        <a href="#"><img title="Twitter" src="./img/icons/twitter.png" alt="Twitter"></a>
+        <a href="#"><img title="Facebook" src="./img/icons/facebook.png" alt="Facebook"></a>
+        <a href="#"><img title="LinkedIn" src="./img/icons/linkedin.png" alt="LinkedIn"></a>
+      </nav>
+    </header>
+    <!-- HEADER ENDS -->
+
+    <!-- MAIN BEGINS -->
     <main class="mainUI">
       <section class="slideshowContainer">
-        <div class="listingSearchContainer">
+        <!-- <div class="listingSearchContainer">
           <h2>Your dream <span><button>HOME</button></span> is one click away!</h2>
-        </div>
+        </div> -->
         <div class="slide one active parallax">
-        <!--  <img title="Boats" src="img/boats.jpg" alt="Boats"> -->
+          <!--  <img title="Boats" src="img/boats.jpg" alt="Boats"> -->
         </div>
-        <!--
-        <div class="slideControls">
-          <button class="slideNav prev" type="button" onclick()><</button>
-          <div class="slideDescription">
-            <div class="borderBox">
-              <p>Graffiti Alley, Queen Street, Toronto</p>
-            </div>
-          </div>
-          <button class="slideNav next" type="button" onclick()>></button>
-        </div>
--->
       </section>
 
-      <header id="topUI">
-        <nav class="navMenu">
-          <a href="#">HOME</a>
-          <a href="#">INVESTING</a>
-          <a href="#">ADVICE</a>
-          <a href="#">RESOURCES</a>
-          <a href="#">CONTACT</a>
-        </nav>
+      <section class="blog">
+        <div class="blogContainer">
+          <div class="subjectContainer">
+            <div class="subjectTitle">
+              <h2>BLOG</h2>
+            </div>
+          </div>
 
-        <!--  <h1 class="pageTitle">Investment Properties 416</h1> -->
+          <div class="big Square gap">
+            <div class="blogImgWrapper">
+              <a href="./blog1.html">
+              <img src="./img/blog1.jpg">
+              <h3>BLOG POST 1</h3>
+              </a>
+            </div>
+          </div>
 
-        <nav class="socialNav">
-          <a href="#"><img title="Instagram" src="./img/icons/instagram.png" alt="Instagram"></a>
-          <a href="#"><img title="Twitter" src="./img/icons/twitter.png" alt="Twitter"></a>
-          <a href="#"><img title="Facebook" src="./img/icons/facebook.png" alt="Facebook"></a>
-          <a href="#"><img title="LinkedIn" src="./img/icons/linkedin.png" alt="LinkedIn"></a>
-        </nav>
-      </header>
-      <!-- HEADER ENDS -->
+          <div class="doubleSquare gap">
+            <div class="small Square">
+              <div class="blogImgWrapper">
+                <a href="./blog2.html">
+                <img src="./img/blog2.jpg">
+                <h3>BLOG POST 2</h3>
+                </a>
+              </div>
+            </div>
+            <div class="small Square">
+              <div class="blogImgWrapper">
+                <a href="./blog3.html">
+                <img src="./img/blog.jpg">
+                <h3>BLOG POST 3</h3>
+                </a>
+              </div>
+            </div>
+          </div>
 
-      <!-- MAIN BEGINS -->
+          <div class="subjectContainer gap">
+            <div class="subjectTitle">
+              <h2>RESOURCES</h2>
+            </div>
+          </div>
+
+          <div class="doubleSquare gap">
+            <div class="small Square">
+              <div class="smallImgWrapper">
+                <img src="./img/blog1.jpg">
+                <h3>BUY AND SELL</h3>
+              </div>
+            </div>
+            <div class="small Square">
+              <div class="smallImgWrapper">
+                <img src="./img/blog1.jpg">
+                <h3>FEATURED LISTINGS</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="doubleSquare gap">
+            <div class="small Square">
+              <div class="smallImgWrapper">
+                <img src="./img/blog1.jpg">
+                <h3>ABOUT</h3>
+              </div>
+            </div>
+            <div id="tSlideshow" class="small Square">
+              <div class="smallImgWrapper">
+                <img src="./img/blog1.jpg">
+              </div>
+              <div class="smallImgWrapper">
+                <img src="./img/blog2.jpg">
+              </div>
+              <div class="smallImgWrapper">
+                <img src="./img/blog.jpg">
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonialContainer gap">
+            <div id="testimonialSlideshow">
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.<br>
+                <h3>-John Doe</h3>
+              </div>
+              <div>
+                Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+                <h3>-Jane Doe</h3>
+              </div>
+              <div>
+                Duis aute enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+                <h3>-Jack Doe</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
       <section class="userResources">
         <div class="barContainer">
           <div class="topBar">
@@ -118,89 +215,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="blog">
-        <div class="blogTitle">
-          <h2>Blog</h2>
-          <h3>Checkout our blog with up to date advice on your investment needs</h3>
-        </div>
-        <div class="blogContainer">
-          <!--
-          <div class="big Square">
-            <h3>Prime Investment Real Estate in the Heart of the City!</h3>
-            <div class="blogImgWrapper">
-              <img src="./img/blog1.jpg">
-            </div>
-            <p>There is new development happening in the heart of the city, and now is the perfect time to invest! I've been keeping my eye on these developments for awhile now ...</p>
-          </div>
-          <div class="rowContainer">
-            <div class="lrRow">
-              <div class="rowImgWrapper">
-                <img src="./img/blog2.jpg">
-              </div>
-              <div class="blogDescription">
-              <h3>Dinner and Shopping Coming Near You!</h3>
-              <p>Some big developments are happening in and around the metropolitan area! This could be a good time to attact tenents to your establishment with the soon to be mega mall complex opening just next door. I've already invested there myself and want you to reap the rewards too ...</p>
-            </div>
-            </div>
-            <div class="rlRow">
-              <div class="blogDescription">
-              <h3>Another Click Baity Blog Title Goes Here</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="rowImgWrapper">
-              <img src="./img/graffiti.jpg">
-            </div>
-            </div>
-          </div>
-          <div class="quadContainer">
--->
-
-          <div class="small Square">
-            <h3>Title Goes Here</h3>
-            <div class="blogImgWrapper">
-              <img src="./img/boats.jpg">
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="small Square">
-            <h3>TITLE</h3>
-            <div class="blogImgWrapper">
-              <img src="./img/blog2.jpg">
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="small Square">
-            <h3>TITLE</h3>
-            <div class="blogImgWrapper">
-              <img src="./img/graffiti.JPG">
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="small Square">
-            <h3>TITLE</h3>
-            <div class="blogImgWrapper">
-              <img src="./img/blog2.jpg">
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-
-          <!--
-          </div>
-          <div class="big Square">
-            <h3>Another Blog Title Goes Here</h3>
-            <div class="blogImgWrapper">
-              <img src="./img/blog1.jpg">
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
--->
         </div>
       </section>
 
@@ -253,35 +267,36 @@
           <h2>Track Record</h2>
         </div>
         <div class="carouselContainer">
-        <div class="carousel carousel-main" data-flickity>
-          <div class="carousel-cell"><!--<img src="img/feat1.jpeg">--></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-        </div>
+          <div class="carousel carousel-main" data-flickity>
+            <div class="carousel-cell">
+              <img src="img/feat1.jpeg">
+            </div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+          </div>
 
-        <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
+          <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+          </div>
         </div>
-      </div>
       </section>
 
-      <!--
       <section class="featuredListings">
         <div class="featuredContainer">
           <div class="sectionTitle">
@@ -316,8 +331,7 @@
           </div>
         </div>
       </section>
--->
-      <!--
+
       <section class="linksContainer">
         <div class="linkBox" style="border-right: 2px solid black;">
           <div class="boxBG">
@@ -386,7 +400,21 @@
     <!-- MAIN ENDS -->
 
     <!-- FOOTER BEGINS -->
-    <footer>
+    <footer class="parallaxWrapper">
+      <div class="footerContainer">
+        <div class="contactLinks">
+          <h2>Contact</h2>
+          <a>Phone: 555-5555</a>
+          <a>Phone: 555-5555</a>
+          <a>Email: email@email.com</a>
+        </div>
+        <div class="socialNav">
+          <a href="#"><img title="Instagram" src="./img/icons/instagram.png" alt="Instagram"></a>
+          <a href="#"><img title="Twitter" src="./img/icons/twitter.png" alt="Twitter"></a>
+          <a href="#"><img title="Facebook" src="./img/icons/facebook.png" alt="Facebook"></a>
+          <a href="#"><img title="LinkedIn" src="./img/icons/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
     </footer>
     <!-- FOOTER ENDS -->
 

@@ -1,0 +1,32 @@
+footer {
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.footerContainer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  font-family: 'PT Sans', sans-serif;
+  color: rgb(245, 245, 245);
+}
+.parallaxWrapper {
+  background-image: url("../img/blackbg.jpg");
+  background-color: rgba(19,10,13);
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

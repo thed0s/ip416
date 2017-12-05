@@ -1,6 +1,6 @@
 var yourNavigation = $("#topUI");
     stickyDiv = "sticky";
-    yourHeader = $('.slideshowContainer').height();
+    yourHeader = $('#topUI').height();
 
 $(window).scroll(function() {
   if( $(this).scrollTop() > yourHeader ) {
@@ -10,6 +10,29 @@ $(window).scroll(function() {
   }
 });
 
+$("#testimonialSlideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#testimonialSlideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#testimonialSlideshow');
+},  3000);
+
+$("#tSlideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#tSlideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#tSlideshow');
+},  3000);
+
+/*
 $('.main-gallery').flickity({
   wrapAround: true,
   prevNextButtons: false,
@@ -31,3 +54,4 @@ $('.carousel-nav').flickity({
   contain: true,
   pageDots: false
 });
+*/
